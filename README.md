@@ -29,5 +29,7 @@ where bin_size is the maximum bin size in bytes.
 
 #### TBC (not yet implemented)
 --input \[path to input_directory]
+
 --keep
+
 --output \[path_to_output_directory]
