@@ -27,7 +27,7 @@ where bin_size is the maximum bin size in bytes.
 --verbose
   print output bins description
 
-####TBC (not yet implemented)
+#### TBC (not yet implemented)
 --input \[path to input_directory]
 --keep
 --output \[path_to_output_directory]
