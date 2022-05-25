@@ -1,7 +1,5 @@
 # binpk
 Utility for bin-packing files into groups (bins) of a given size.
-# binpk
-Utility for bin-packing files into groups (bins) of a given size.
 
 This program is intended for situations in which files need to be archived in an organised way across many disks, optical media or otherwise non-contiguous volumes.
 
