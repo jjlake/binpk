@@ -5,8 +5,12 @@
 #include "util.hpp"
 
 int main(int argc, char **argv){
-	bin_max_size = std::stoul(argv[1]); // MOVE
 	process_args(argc, argv);
+	
+	if(help){
+		print_instructions();
+		exit(0);
+	}
 	
 	Group elems = read_files("./", recursive);
 	

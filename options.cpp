@@ -15,12 +15,18 @@ bool preserve_directories = false;
 bool recursive = false;
 bool verbose = false;
 bool keep = false;
+bool help = false;
+unsigned long int bin_max_size = 1000000;
 
 void process_args(int argc, char **argv) {
+	if(strcmp(argv[1], "--help") != 0)
+		bin_max_size = std::stoul(argv[1]);
+	
     int opt;
     
 	static struct option long_options[] = {
 		{"bin", required_argument, NULL, 'b'},
+		{"help", no_argument, NULL, 'h'},
 		{"input", required_argument, NULL, 'i'},
 		{"keep", no_argument, NULL, 'k'},
 		{"output", required_argument, NULL, 'o'},
@@ -51,6 +57,10 @@ void process_args(int argc, char **argv) {
 				break;
 			}
 						
+			case 'h':
+				help = true;
+				break;
+			
 			case 'i':
 				input_loc = optarg;
 				break;

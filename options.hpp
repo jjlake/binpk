@@ -12,6 +12,7 @@
 #define EINVAL 22
 
 #define BOLD_ESC_CODE "\x1b[1m" 
+#define UNDERLINE_ESC_CODE "\x1b[4m" 
 #define DEF_FORMATTING_ESC_CODE "\x1b[0m" 
 
 extern enum BIN_MODE {
@@ -43,6 +44,8 @@ extern bool recursive;
 extern bool verbose;
 
 extern bool keep;
+extern bool help;
+extern unsigned long int bin_max_size;
 
 void process_args(int argc, char **argv);
 
