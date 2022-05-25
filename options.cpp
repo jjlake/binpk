@@ -99,10 +99,12 @@ void process_args(int argc, char **argv) {
 				//break;
 			
 			case '?':
+				std::cout << "For help type ./binpk --help" << std::endl;
 				exit(EINVAL);
 				
 			invalid_option:{
 				cout << BOLD_ESC_CODE << long_options[option_index].name << DEF_FORMATTING_ESC_CODE << " option parameter not found: " << optarg << std::endl;
+				std::cout << "For help type ./binpk --help" << std::endl;
 				exit(EINVAL);
 			}
         }
